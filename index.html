@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap new learn">
+    <meta name="keywords" content="bootstrap new learn again">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- config -->
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-black">
+                <div class="container">
+                    <a class="navbar-brand text-light" href="#">Navbar</a>
+
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navs"
+                        aria-label="toggle navigation" aria-expanded="false" aria-controls="navs">
+                        <span class="navbar-toggler-icon"></span></button>
+
+                    <div class="collapse navbar-collapse" id="navs">
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item "><a href="#" class="nav-link active  fs-5" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link text-light fs-5">About</a></li>
+                            <li class="nav-item dropdown" data-bs-toggle="dropdown"><a href="#"
+                                    class="nav-link text-light fs-5 dropdown-toggle">Skills</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Html</a></li>
+                                    <li><a href="#" class="dropdown-item">Css</a></li>
+                                    <li><a href="#" class="dropdown-item">Bootstrap</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a href="#" class="dropdown-item">Telwind</a></li>
+                            </li>
+                        </ul>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="assets/img/pexels-danielabsi-952670.jpg" class="w-100 d-block" alt="First image">
+                        <div class="carousel-caption">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores illum enim explicabo
+                                quasi
+                                alias fugit non architecto expedita saepe id?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-bs-interval="10000">
+                        <img src="assets/img/typography-quote-bokeh-motivational-wallpaper-thumb.jpg"
+                            class="w-100 d-block" alt="image 2">
+                        <div class="carousel-caption">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores illum enim explicabo
+                                quasi
+                                alias fugit non architecto expedita saepe id?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item " data-bs-interval="10000">
+                        <img src="assets/img/pexels-yasin-onus-520099596-34194500.jpg" class="w-100 d-block"
+                            alt="image 3">
+                        <div class="carousel-caption">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores illum enim explicabo
+                                quasi
+                                alias fugit non architecto expedita saepe id?</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">prev</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">next</span>
+                </button>
+            </div>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div>
+
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <h6>Success!</h6> This alert box could indicate a successful or positive action.
+            </div>
+
+            <ul class="pagination">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                <li class="page-item"><a href="#" class="page-link">6</a></li>
+                <li class="page-item"><a href="#" class="page-link">next</a></li>
+
+            </ul>
+
+
+        </div>
+        <button class="btn btn-primary">
+            Notfication <span class="badge bg-danger">4</span>
+        </button>
+
+        <button class="btn btn-danger position-relative">
+            Notfication <span class="badge position-absolute start-100 translate-middle bg-primary z-3">99+</span>
+        </button>
+
+        <div class="btn-group">
+            <button class="btn btn-danger">about</button>
+            <button class="btn btn-success">about</button>
+            <button class="btn btn-secondary">about</button>
+        </div>
+
+        <div class="card-group my-3 gap-3 d-flex">
+            <div class="card w-25">
+                <img src="assets/img/e0b0316a-0467-436f-98b5-124dc0d900d1.png" class="w-100 card-img-top">
+                <div class="card-body border border-success ">
+                    <h3 class="text-primary card-title">Omar Goher</h3>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur?</p>
+                    <button class="btn btn-primary">See profile</button>
+                </div>
+            </div>
+            <div class="card w-25">
+                <img src="assets/img/e0b0316a-0467-436f-98b5-124dc0d900d1.png" class="w-100 card-img-top">
+                <div class="card-body border border-success ">
+                    <h3 class="text-primary card-title">Omar Goher</h3>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur?</p>
+                    <button class="btn btn-primary">See profile</button>
+                </div>
+            </div>
+            <div class="card w-25">
+                <img src="assets/img/e0b0316a-0467-436f-98b5-124dc0d900d1.png" class="w-100 card-img-top">
+                <div class="card-body border border-success ">
+                    <h3 class="text-primary card-title">Omar Goher</h3>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur?</p>
+                    <button class="btn btn-primary">See profile</button>
+                </div>
+            </div>
+        </div>
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Button with data-bs-target
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when
+                the user activates the relevant trigger.
+            </div>
+        </div>
+
+
+        <button class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#collapseex">
+            Enter you show images <span class="badge bg-danger">5</span>
+        </button>
+
+        <button class="btn btn-outline-danger" data-bs-toggle="collapse" data-bs-target="#collp"> enter</button>
+        <div class="collapse bg-danger" id="collp">
+            <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dignissimos.</p>
+        </div>
+        <div class="card-group d-flex gap-5">
+            <div class="card w-25 collapse collapse-horizontal" id="collapseex">
+                <img src="assets/img/e0b0316a-0467-436f-98b5-124dc0d900d1.png" class="w-100 card-img-top">
+                <div class="card-body border border-success ">
+                    <h3 class="text-primary card-title">Omar Goher</h3>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur?</p>
+                    <button class="btn btn-primary">See profile</button>
+                </div>
+            </div>
+
+            <div class="card w-25 collapse" id="collapseex">
+                <img src="assets/img/e0b0316a-0467-436f-98b5-124dc0d900d1.png" class="w-100 card-img-top">
+                <div class="card-body border border-success ">
+                    <h3 class="text-primary card-title">Omar Goher</h3>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur?</p>
+                    <button class="btn btn-primary">See profile</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-group d-flex gap-5">
+            <div class="dropdown" data-bs-theme="dark">
+                <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropdown
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item active">About</li>
+                    <li class="dropdown-item">skills</li>
+                    <li class="dropdown-item">Projects</li>
+                    <hr class="dropdown-divider">
+                    <li class="dropdown-item">contant</li>
+                </ul>
+            </div>
+
+
+            <div class="dropdown btn-group dropup">
+                <button class="btn btn-primary">Split dropup</button>
+                <button class="dropdown-toggle dropdown-toggle-split btn btn-primary" data-bs-toggle="dropdown">
+                    <span class="visually-hidden">Dropup</span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li class="dropdown-item active">About</li>
+                    <li class="dropdown-item">skills</li>
+                    <li class="dropdown-item">Projects</li>
+                    <hr class="dropdown-divider">
+                    <li class="dropdown-item">contant</li>
+                </ul>
+            </div>
+            <div class="dropdown btn-group dropend">
+                <button class="btn btn-danger">Split dropend</button>
+                <button class="dropdown-toggle dropdown-toggle-split btn btn-danger" data-bs-toggle="dropdown">
+                    <span class="visually-hidden">Dropend</span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li class="dropdown-item active">About</li>
+                    <li class="dropdown-item">skills</li>
+                    <li class="dropdown-item">Projects</li>
+                    <hr class="dropdown-divider">
+                    <li class="dropdown-item">contant</li>
+                </ul>
+            </div>
+            <div class="dropdown btn-group dropstart">
+                <button class="dropdown-toggle dropdown-toggle-split btn btn-info" data-bs-toggle="dropdown">
+                    <span class="visually-hidden">dropstart</span>
+                </button>
+                <button class="btn btn-info">Split dropstart</button>
+
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li class="dropdown-item active">About</li>
+                    <li class="dropdown-item">skills</li>
+                    <li class="dropdown-item">Projects</li>
+                    <hr class="dropdown-divider">
+                    <li class="dropdown-item">contant</li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">DropDown <span
+                        class="badge bg-success">5</span></button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">About</li>
+                    <li class="dropdown-item">About</li>
+                    <li class="dropdown-item">About</li>
+                    <hr class="dropdown-divider">
+                    <li class="dropdown-item">About</li>
+                </ul>
+            </div>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo">Open modal </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-auto-close="outside">
+                    Dropdown form
+                </button>
+                <form class="dropdown-menu p-4">
+                    <div class="mb-3">
+                        <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                            placeholder="email@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                            placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                            <label class="form-check-label" for="dropdownCheck2">
+                                Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+            </div>
+
+
+            <div class="offcanvas offcanvas-start" id="demo">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title">Hola</h2>
+                    <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <button type="button" class="btn btn-danger">buenues Tardes</button>
+                </div>
+            </div>
+            <button class="btn btn-primary" data-bs-target="#demo" data-bs-toggle="offcanvas">open offcanvas</button>
+
+
+
+
+            <button class="btn btn-outline-danger" data-bs-toggle="offcanvas" data-bs-target="#scrollcanvs">
+                open another offcanvas
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-dark text-light " data-bs-backdrop="static"  data-bs-scroll="true" id="scrollcanvs">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Scrolling offcanvas</h1>
+                    <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, tenetur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, tenetur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, tenetur?</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <!-- script  -->
+    <script src="main.js"></script>
+    <script src="assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
